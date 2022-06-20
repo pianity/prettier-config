@@ -105,9 +105,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pianity/eslint-config@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@pianity/eslint-config@npm:0.0.1"
+"@pianity/eslint-config@npm:^0.0.2":
+  version: 0.0.2
+  resolution: "@pianity/eslint-config@npm:0.0.2"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.26.0
     "@typescript-eslint/parser": ^5.26.0
@@ -122,7 +122,8 @@ __metadata:
     eslint-plugin-tsdoc: ^0.2.16
   peerDependencies:
     eslint: ^8.16.0
-  checksum: 975d212cd9bc8f7cb677ffb0c4086dde7c2fe6f9715faf0ab18152727fda7e2c7617cb79ff2c5e2829709d60018971d16a2ec087b27cdff45b39612e8cd452fe
+    typescript: ^4.5
+  checksum: 2db06d10d9bca1ade7e1784d0269909f24e97dfa8439caa827364a1cfff390dfcdd8c0e1a2bb3f1870d6fa73c60df08858b35a50503c5576c7dfd5fcbeba1682
   languageName: node
   linkType: hard
 
@@ -130,9 +131,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pianity/prettier-config@workspace:."
   dependencies:
-    "@pianity/eslint-config": ^0.0.1
+    "@pianity/eslint-config": ^0.0.2
     eslint: ^8.16.0
     prettier: ^2.6.2
+    typescript: ^4.7
   peerDependencies:
     prettier: ^2.6.2
   languageName: unknown
@@ -2116,6 +2118,26 @@ __metadata:
   version: 0.20.2
   resolution: "type-fest@npm:0.20.2"
   checksum: 4fb3272df21ad1c552486f8a2f8e115c09a521ad7a8db3d56d53718d0c907b62c6e9141ba5f584af3f6830d0872c521357e512381f24f7c44acae583ad517d73
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.7":
+  version: 4.7.4
+  resolution: "typescript@npm:4.7.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 5750181b1cd7e6482c4195825547e70f944114fb47e58e4aa7553e62f11b3f3173766aef9c281783edfd881f7b8299cf35e3ca8caebe73d8464528c907a164df
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.7#~builtin<compat/typescript>":
+  version: 4.7.4
+  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=bda367"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 96d3030cb01143570567cb4f3a616b10df65f658f0e74e853e77a089a6a954e35c800be7db8b9bfe9a1ae05d9c2897e281359f65e4caa1caf266368e1c4febd3
   languageName: node
   linkType: hard
 
